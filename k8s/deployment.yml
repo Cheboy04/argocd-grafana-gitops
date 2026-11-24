@@ -22,6 +22,9 @@ spec:
           envFrom:
             - secretRef:
                 name: grafana-admin
+          env:
+            - name: GF_USERS_DEFAULT_THEME
+              value: "light"
           resources:
             requests:
               cpu: 100m
